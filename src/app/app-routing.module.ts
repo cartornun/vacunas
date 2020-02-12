@@ -10,7 +10,23 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'clic-salud',
+    loadChildren: () => import('./clic-salud/clic-salud.module').then( m => m.ClicSaludPageModule)
+  },
+  {
+    path: 'acerca-de',
+    loadChildren: () => import('./acerca-de/acerca-de.module').then( m => m.AcercaDePageModule)
+  },
+  {
+    path: 'tutorial',
+    loadChildren: () => import('./tutorial/tutorial.module').then( m => m.TutorialPageModule)
   }
+
 ];
 
 @NgModule({
