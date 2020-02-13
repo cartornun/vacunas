@@ -1,9 +1,80 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Tutorial</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Tutorial
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <img class="imageslide" src="assets/img/SAS.png" alt="">
+          <h2> Identifícate</h2>
+          <p>
+            Selecciona uno de los métodos de iniciar sesión para consultar tu información y la de sus beneficiarios
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <h2>Histórico de vacunas</h2>
+          <p>
+            <img class="imageslide" src="assets/img/nube.png">
+            Podrás ver el histórico de vacunas, asi como, el de sus beneficiarios
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <h2>PVA</h2>
+          <p>
+            Plan de Vacunación Andaluz. Por vacuna o por edad, además podrás ver tu plan de vacunación de forma clara
+            <img class="imageslide" src="assets/img/calendario.png">
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <img class="imageslide" src="assets/img/vacuna.png">
+          <h2>Vacunas y enfermedades</h2>
+          <p>
+            Al seleccionar una vacunas podrás ver la lista de enfermedades asociadas a la misma
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <img class="imageslide" src="assets/img/demo.png">
+          <h2>Modo DEMO</h2>
+          <p>
+            Accede al modo demo a  través de este icono para probar la aplicación
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row margin>
+        <ion-col>
+          <img class="imageslide" src="assets/img/formulario.jpg">
+          <ion-menu-button>Pulsa para comenzar</ion-menu-button>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
 
 </ion-content>
+
