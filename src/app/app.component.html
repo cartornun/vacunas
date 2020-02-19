@@ -3,7 +3,7 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header color="primary">Iniciar Sesión</ion-list-header>
+          <ion-list-header color="success">Iniciar Sesión</ion-list-header>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
@@ -12,7 +12,7 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
-
+        <img class="imageslide" src="assets/img/SAS.png" alt="">
 
       </ion-content>
     </ion-menu>

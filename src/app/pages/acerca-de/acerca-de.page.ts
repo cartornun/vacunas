@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DeseosService} from '../../services/deseos.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDePage implements OnInit {
 
-  constructor() { }
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(public deseosService: DeseosService) { }
 
   ngOnInit() {
   }
