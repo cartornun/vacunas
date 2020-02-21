@@ -5,7 +5,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
   {
@@ -36,6 +36,23 @@ const routes: Routes = [
   {
     path: 'agregar',
     loadChildren: () => import('./pages/agregar/agregar.module').then(m => m.AgregarPageModule)
+  },
+  {
+    path: 'pva',
+    loadChildren: () => import('./pages/pva/pva.module').then(m => m.PvaPageModule)
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./pages/registration/registration.module').then(m => m.RegistrationPageModule)
+  }
+  ,
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then(m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'sesion',
+    loadChildren: () => import('./pages/sesion/sesion.module').then(m => m.SesionPageModule)
   }
 
 ];

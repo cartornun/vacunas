@@ -11,14 +11,12 @@
 <ion-content>
   <p>VACUNAS
   </p>
-    <h1>Iniciar sesión</h1>
-    <ion-icon name="enter-outline"></ion-icon>
-    <ion-note> Identifíquese para acceder a su información y la de sus beneficiarios</ion-note>
-    <form class="form">
-      <input type="text" #username name="username" placeholder="Username">
-      <input type="password" #password name="password" placeholder="Password">
-    </form>
-  <ion-button size="large" shape="round" strong = "true"  class="boton-tarjeta">
+  <ion-button href="/sesion" size="large" shape="round" strong = "true"  class="boton_personalizado">
+    <ion-icon name="vaccine"></ion-icon>
+    Iniciar sesión
+    <ion-note>Identifíquese para acceder a su información y la de sus beneficiarios</ion-note>
+  </ion-button>
+  <ion-button href="/pva" size="large" shape="round" strong = "true"  class="boton_1">
     <ion-icon name="vaccine"></ion-icon>
     Vacunas
     <ion-note>Información general de vacunas</ion-note>
